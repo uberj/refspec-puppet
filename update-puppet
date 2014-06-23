@@ -3,13 +3,14 @@
 set -x -e
 export LIBRARIAN_PUPPET_TMP=/tmp/
 
+ENVIRONMENTS=/etc/puppet/environments
 
 # Sync all environments from remote repo in /etc/r10k.yaml
 r10k deploy environment -v
 
 # For each environemnt pull down requirements
-for d in $(ls environments); do
-    env_path=environments/$d
+for d in $(ls $ENVIRONMENTS); do
+    env_path=$ENVIRONMENTS/$d
     if [ -d $env_path ]; then
         pushd $env_path
         librarian-puppet install --verbose
