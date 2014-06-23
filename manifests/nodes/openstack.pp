@@ -1,4 +1,5 @@
 node 'refspec2.vm.labs.scl3.mozilla.com' {
+  include ::test
   include ::openstack::role::controller
 }
 
