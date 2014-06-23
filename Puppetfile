@@ -7,6 +7,6 @@ mod 'openstack',
     :git => 'https://github.com/puppetlabs/puppetlabs-openstack.git',
     :ref => 'master'
 
-mod 'test',
+mod 'test_module',
     :git => 'https://github.com/mozjcrowe/test_module.git',
     :ref => 'master'
