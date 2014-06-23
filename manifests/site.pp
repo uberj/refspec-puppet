@@ -1,1 +1,4 @@
 import "nodes/*"
+
+node "default" {
+}
