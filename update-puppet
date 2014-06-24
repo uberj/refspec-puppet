@@ -13,7 +13,7 @@ for d in $(ls $ENVIRONMENTS); do
     env_path=$ENVIRONMENTS/$d
     if [ -d $env_path ]; then
         pushd $env_path
-        librarian-puppet install --verbose
+        librarian-puppet update --verbose
         popd
     fi
 done
