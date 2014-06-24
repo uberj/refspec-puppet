@@ -29,8 +29,8 @@ openstack::network::neutron::private: '10.22.112.0/22'
 
 openstack::controller::address::api: '10.22.112.131'
 openstack::controller::address::management: '10.22.112.131'
-#openstack::storage::address::api: '192.168.11.5'
-#openstack::storage::address::management: '172.16.33.5'
+openstack::storage::address::api: '10.22.112.131'
+openstack::storage::address::management: '10.22.112.131'
 
 ######## Database
 
