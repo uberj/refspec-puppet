@@ -1,7 +1,0 @@
----
-:backends:
-  - yaml
-:hierarchy:
-    - site
-:yaml:
-    :datadir: /etc/puppet/environments/%{environment}/hiera/
