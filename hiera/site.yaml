@@ -36,7 +36,7 @@ openstack::storage::address::management: '10.22.112.131'
 
 openstack::mysql::root_password: 'spam-gak'
 openstack::mysql::service_password: 'fuva-wax'
-openstack::mysql::allowed_hosts: ['localhost', '127.0.0.1', '10.22.113.%', 'refspec2.vm.labs.scl3.mozilla.com']
+openstack::mysql::allowed_hosts: ['localhost', '127.0.0.1', '10.22.113.%', 'refspec%.vm.labs.scl3.mozilla.com']
 
 ######## RabbitMQ
 
