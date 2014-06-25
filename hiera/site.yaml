@@ -9,7 +9,7 @@ openstack::region: 'openstack'
 openstack::network::api: '10.22.112.0/22'
 openstack::network::external: '10.22.112.0/22'
 openstack::network::management: '10.22.112.0/22'
-openstack::network::data: '10.22.112.0/22'
+openstack::network::data: '192.168.12.0/24'
 
 #openstack::network::external::ippool::start: 192.168.22.100
 #openstack::network::external::ippool::end: 192.168.22.200
