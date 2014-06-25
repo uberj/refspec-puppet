@@ -1,8 +1,6 @@
 #!/bin/bash
 
 set -x -e
-export LIBRARIAN_PUPPET_TMP=/tmp/
-
 ENVIRONMENTS=/etc/puppet/environments
 
 # Sync all environments from remote repo in /etc/r10k.yaml
@@ -13,8 +11,10 @@ for d in $(ls $ENVIRONMENTS); do
     env_path=$ENVIRONMENTS/$d
     if [ -d $env_path ]; then
         pushd $env_path
-        librarian-puppet update --verbose
+        librarian-puppet update --verbose &
         popd
     fi
 done
+
+wait
 
