@@ -4,7 +4,7 @@ forge "https://forgeapi.puppetlabs.com"
 mod 'puppetlabs/stdlib'
 
 mod 'openstack',
-    :git => 'https://github.com/puppetlabs/puppetlabs-openstack.git',
+    :git => 'https://github.com/uberj/puppetlabs-openstack.git',
     :ref => 'master'
 
 mod 'test_module',
