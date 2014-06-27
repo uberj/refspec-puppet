@@ -17,4 +17,3 @@ for d in $(ls $ENVIRONMENTS); do
 done
 
 wait
-
