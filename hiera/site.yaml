@@ -25,7 +25,8 @@ openstack::network::external::dns: 10.22.75.40
 
 ######## Private Neutron Network
 
-openstack::network::neutron::private: '10.22.112.0/22'
+# I chose this. It conflicted with our mozilla networks
+openstack::network::neutron::private: '192.168.55.0/24'
 
 ######## Fixed IPs (controllers)
 
