@@ -80,6 +80,7 @@ openstack::swift::hash_suffix: 'pop-bang'
 
 ######## Nova
 
+# kvm needs Hardware Virtualization
 openstack::nova::libvirt_type: 'qemu'
 openstack::nova::password: 'quuk-paj'
 
