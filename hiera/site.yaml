@@ -123,4 +123,4 @@ openstack::tempest::swift_available     : false
 
 ######## Log levels
 openstack::verbose: 'True'
-openstack::debug: 'True'
+openstack::debug: 'False'
