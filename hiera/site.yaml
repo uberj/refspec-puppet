@@ -1,45 +1,34 @@
 openstack::region: 'openstack'
 
 ######## Networks
-#openstack::network::api: '192.168.11.0/24'
-#openstack::network::external: '192.168.22.0/24'
-#openstack::network::management: '172.16.33.0/24'
-#openstack::network::data: '172.16.44.0/24'
+openstack::network::api: '192.168.1.0/24'
+openstack::network::external: '192.168.2.0/24'
+openstack::network::management: '192.168.3.0/24'
+openstack::network::data: '192.168.4.0/24'
+openstack::network::data_gateway: '192.168.4.130'
 
-openstack::network::api: '192.168.11.0/24'
-openstack::network::external: '192.168.22.0/24'
-openstack::network::management: '172.16.33.0/24'
-openstack::network::data: '172.16.44.0/24'
-openstack::network::data_gateway: '172.16.44.1'
-
-openstack::network::external::ippool::start: 192.168.22.100
-openstack::network::external::ippool::end: 192.168.22.200
-# TODO(uberj) is this right?
-openstack::network::external::gateway: 192.168.22.2
-#openstack::network::external::dns: 192.168.22.2
-
-#openstack::network::external::ippool::start: 10.22.113.200
-#openstack::network::external::ippool::end: 10.22.113.250
-#openstack::network::external::gateway: 10.22.112.132
+openstack::network::external::ippool::start: 192.168.2.150
+openstack::network::external::ippool::end: 192.168.2.200
+openstack::network::external::gateway: 192.168.2.1
 openstack::network::external::dns: 10.22.75.40
 
 ######## Private Neutron Network
 
 # I chose this. It conflicted with our mozilla networks
-openstack::network::neutron::private: '192.168.55.0/24'
+openstack::network::neutron::private: '10.33.0.0/16'
 
 ######## Fixed IPs (controllers)
 
-openstack::controller::address::api: '10.22.112.131'
-openstack::controller::address::management: '172.16.33.131'
-openstack::storage::address::api: '10.22.112.131'
-openstack::storage::address::management: '10.22.112.131'
+openstack::controller::address::api: '192.168.1.131'
+openstack::controller::address::management: '192.168.3.131'
+openstack::storage::address::api: '192.168.1.131'
+openstack::storage::address::management: '192.168.3.131'
 
 ######## Database
 
 openstack::mysql::root_password: 'spam-gak'
 openstack::mysql::service_password: 'fuva-wax'
-openstack::mysql::allowed_hosts: ['localhost', '127.0.0.1', '172.16.33.%', '10.22.113.%', 'refspec%.vm.labs.scl3.mozilla.com']
+openstack::mysql::allowed_hosts: ['localhost', '127.0.0.1', '172.16.33.%', '10.22.113.%','192.168.%','refspec%.vm.labs.scl3.mozilla.com']
 
 ######## RabbitMQ
 
