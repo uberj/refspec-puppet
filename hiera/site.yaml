@@ -14,15 +14,15 @@ openstack::network::external::dns: 10.22.75.40
 
 ######## Private Neutron Network
 
-# I chose this. It conflicted with our mozilla networks
 openstack::network::neutron::private: '10.33.0.0/16'
 
 ######## Fixed IPs (controllers)
 
 openstack::controller::address::api: '192.168.1.131'
 openstack::controller::address::management: '192.168.3.131'
-openstack::storage::address::api: '192.168.1.131'
-openstack::storage::address::management: '192.168.3.131'
+
+openstack::storage::address::api: '192.168.1.132'
+openstack::storage::address::management: '192.168.3.132'
 
 ######## Database
 
