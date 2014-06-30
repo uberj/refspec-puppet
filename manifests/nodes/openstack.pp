@@ -5,7 +5,11 @@ node 'refspec2.vm.labs.scl3.mozilla.com' {
 
 node 'refspec3.vm.labs.scl3.mozilla.com' {
   include ::openstack::role::network
-  include ::openstack::role::storage
+
+  #XXX: Should be a role
+  class { '::openstack::profile::glance::api': }
+  class { '::openstack::profile::cinder::volume': }                                                                                                                             
+  class { '::openstack::setup::cirros': } 
 }
 
 node 'refspec4.vm.labs.scl3.mozilla.com' {
