@@ -1,12 +1,9 @@
 forge "http://forge.puppetlabs.com"
 
+####################### NOTE #########################
+# All modules *must* be pinned to a specific version #
+######################################################
+
 # modules from the puppet forge
-mod 'puppetlabs/stdlib'
-
-mod 'openstack',
-    :git => 'https://github.com/puppetlabs/puppetlabs-openstack.git',
-    :ref => 'master'
-
-mod 'test',
-    :git => 'https://github.com/mozjcrowe/test_module.git',
-    :ref => 'master'
+mod 'puppetlabs/stdlib', "4.3.0"
+mod 'puppetlabs/mysql', "2.3.0"
