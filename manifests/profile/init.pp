@@ -1,1 +1,1 @@
-class puppet::mozprofile {}
+class mozpuppet::mozprofile {}
