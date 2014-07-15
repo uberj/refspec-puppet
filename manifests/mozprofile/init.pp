@@ -1,1 +1,0 @@
-class mozpuppet::mozprofile {}
