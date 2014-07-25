@@ -1,2 +1,2 @@
-class ::role::base {
+class mozpuppet::role::base {
 }
