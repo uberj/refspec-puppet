@@ -1,0 +1,5 @@
+::profile::dpaste::database::root_password: not-a-good-password
+::profile::dpaste::database::dpaste_username: dpaste
+::profile::dpaste::database::dpaste_user_password: not-another-password
+::profile::dpaste::database::host: 127.0.0.1
+::profile::dpaste::database::dpaste_user_privilates: ['SELECT', 'UPDATE']
