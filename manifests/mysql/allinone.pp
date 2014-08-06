@@ -5,14 +5,8 @@ class m::mysql::allinone (
   $password,
   $allowed_hosts,
 ) {
-  class { '::mysql::server':
-    root_password     => $root_password,
-    restart           => true,
-    override_options  => {
-      'mysqld' => {
-        'bind-address' => '0.0.0.0',
-      }
-    }
+  class {"m::mysql::server":
+    root_password => $root_password
   }
 
   ::mysql::db { "$db_name":
