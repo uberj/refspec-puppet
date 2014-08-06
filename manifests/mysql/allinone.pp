@@ -1,4 +1,4 @@
-class ::m::mysql::allinone (
+class m::mysql::allinone (
   $root_password,
   $user,
   $password,

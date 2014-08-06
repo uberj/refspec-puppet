@@ -1,3 +1,3 @@
-class mozpuppet {
+class m {
 
 }
