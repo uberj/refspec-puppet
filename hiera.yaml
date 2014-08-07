@@ -4,5 +4,5 @@
 :hierarchy:
   - site
 :yaml:
-    :datadir: /etc/mozpuppet/modules/mozpuppet/hiera/
+    :datadir: /etc/mozpuppet/modules/m/hiera/
 
