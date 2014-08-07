@@ -5,7 +5,7 @@ class m::mysql::allinone (
   $password,
   $allowed_hosts,
 ) {
-  class {"m::mysql::server":
+  class { "m::mysql::server":
     root_password => $root_password
   }
 
