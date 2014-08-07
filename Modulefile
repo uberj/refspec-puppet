@@ -1,4 +1,4 @@
-name    'uberj-mozpuppet'
+name    'uberj-m'
 version '0.1.0'
 source 'UNKNOWN'
 author 'uberj'
