@@ -8,3 +8,6 @@ forge "http://forge.puppetlabs.com"
 mod 'puppetlabs/stdlib', "4.3.0"
 mod 'puppetlabs/mysql', "2.3.0"
 mod 'puppetlabs/apache', "1.1.1"
+mod 'stankevich-python',
+    :git => "https://github.com/stankevich/puppet-python.git",
+    :ref => "1.7.9"
