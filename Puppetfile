@@ -10,6 +10,6 @@ mod 'puppetlabs/mysql', "2.3.0"
 mod 'puppetlabs/apache', "1.1.1"
 mod 'puppetlabs/rabbitmq', "4.1.0"
 mod 'ajcrowe/supervisord', "0.4.2"
-mod 'stankevich-python',
-    :git => "https://github.com/stankevich/puppet-python.git",
-    :ref => "1.7.9"
+mod 'uberj-captainshove-puppet',
+    :git => "https://github.com/uberj/captainshove-puppet.git",
+    :ref => "0.1.0"
