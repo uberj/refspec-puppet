@@ -5,11 +5,12 @@ forge "http://forge.puppetlabs.com"
 ##########################################################
 
 # modules from the puppet forge
-mod 'puppetlabs/stdlib', "4.3.0"
-mod 'puppetlabs/mysql', "2.3.0"
-mod 'puppetlabs/apache', "1.1.1"
-mod 'puppetlabs/rabbitmq', "4.1.0"
-mod 'ajcrowe/supervisord', "0.4.2"
+mod 'puppetlabs/stdlib', '4.3.0'
+mod 'puppetlabs/mysql', '2.3.0'
+mod 'puppetlabs/apache', '1.1.1'
+mod 'puppetlabs/rabbitmq', '4.1.0'
+mod 'ajcrowe/supervisord', '0.4.2'
+mod 'torrancew/cron', '0.1.0'
 mod 'uberj-captainshove',
-    :git => "https://github.com/uberj/captainshove-puppet.git",
-    :ref => "0.5.0"
+    :git => 'https://github.com/uberj/captainshove-puppet.git',
+    :ref => '0.5.0'
