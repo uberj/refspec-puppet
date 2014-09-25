@@ -18,7 +18,7 @@ class m::nfs::single_exported_share (
   }
 
   nfs::export { $share_path:
-      options => [ 'rw', 'async' ],
+      options => ['rw', 'async', 'no_subtree_check', 'no_root_squash'],
       clients => [ "${::network_eth0}/${netmask_eth0}" ],
       require => Exec['create-share-path']
   }
