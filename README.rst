@@ -1,6 +1,6 @@
 Refspec puppet
 --------------
-No puppet modules should be in this repository, instead modules shuold be added to the ``Puppetfile`` in the root of this project.
+No puppet modules should be in this repository, instead modules should be added to the ``Puppetfile`` in the root of this project.
 
 Install everything locally
 --------------------------
@@ -11,7 +11,7 @@ Install everything locally
 
 Librarian-puppet
 ----------------
-All modules are pulled in via ``Puppetfile``\s which are processed by librarian-puppet_. If you make a change to any ``Puppetfile`` you are advised to run ``librarian-puppet install --verbose`` to ensure librarian-puppet can resolve any new dependancies.
+All modules are pulled in via ``Puppetfile``\s which are processed by librarian-puppet_. If you make a change to any ``Puppetfile`` you are advised to run ``librarian-puppet install --verbose`` to ensure librarian-puppet can resolve any new dependencies.
 
 r10k
 ----
